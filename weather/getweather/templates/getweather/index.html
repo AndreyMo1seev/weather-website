@@ -1,0 +1,13 @@
+{% extends 'getweather/base.html' %}
+
+{% block context %}
+
+<h2 class="display-2">Weather today</h2>
+<form action="{% url 'getweather:sity' %}"  method="POST">
+    {% csrf_token %}
+<table>
+    <div>{{form}}</div>
+
+</table>
+
+{% endblock context %}

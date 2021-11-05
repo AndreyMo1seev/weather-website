@@ -1,0 +1,16 @@
+{% extends 'getweather/base.html' %}
+
+{% block context %}
+
+<h2 class="display-2">Weather in {{ sity }} today</h2>
+<ul class="list-unstyled">
+    <li>Now in {{ sity }} {{ description }}
+    <ul>
+      <li>Temperature {{ temp }} C°</li>
+      <li>Feels like {{ feels_like }} C°</li>
+      <li>Humidity {{ humidity }}%</li>
+      <li>Clouds {{ clouds }}%</li>
+      <li>Wind speed {{ wind }} m/s</li>
+    </ul>
+<ul>
+{% endblock context %}
