@@ -1,0 +1,83 @@
+{% extends 'getweather/base.html' %}
+
+{% block context %}
+
+<h2 class="display-2 text-center">Weather today</h2>
+{#<form action="{% url 'getweather:sity' %}"  method="POST">#}
+{#    {% csrf_token %}#}
+{#<table>#}
+{#    <div>{{form}}</div>#}
+{##}
+{#</table>#}
+{#</form>#}
+
+{#<div class="card align-content-md-center"  style="width: 18rem;">#}
+{#    <div class="card-body">#}
+{#        <h5 class="card-title">Заголовок карточки</h5>#}
+{#        <h6 class="card-subtitle mb-2 text-muted">Подзаголовок карточки</h6>#}
+{#        <p class="card-text">Небольшой пример текста, который должен основываться на названии карты и составлять основную часть содержимого карты.</p>#}
+{#        <a href="#" class="card-link">Ссылка карточки</a>#}
+{#        <a href="#" class="card-link">Другая ссылка</a>#}
+{#  </div>#}
+{#</div>#}
+<div class="container">
+    <div class="card" style="background-color: #e8eaf1">
+    <div class="row">
+        <div class="col text-center" style="margin-left: 0">
+                <a href="{% url 'getweather:city' 'moscow' %}">Москва</a>
+        </div>
+        <div class="col text-center" style="margin-left: 0">
+            <a href="{% url 'getweather:city' 'kazan' %}">Казань</a>
+        </div>
+        <div class="col text-center" style="margin-left: 0">
+            <a href="{% url 'getweather:city' 'perm' %}">Пермь</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center" style="margin-left: 0">
+            <a href="{% url 'getweather:city' 'saint-petersburg' %}">Санкт-Петербург</a>
+        </div>
+        <div class="col text-center" style="margin-left: 0">
+            <a href="{% url 'getweather:city' 'krasnoyarsk' %}">Красноярск</a>
+        </div>
+        <div class="col text-center" style="margin-left: 0">
+            <a href="{% url 'getweather:city' 'rostov-on-don' %}">Ростов-на-Дону</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <a href="{% url 'getweather:city' 'volgograd' %}">Волгоград</a>
+        </div>
+        <div class="col text-center">
+            <a href="{% url 'getweather:city' 'nizhny-novgorod' %}">Нижний Новгород</a>
+        </div>
+        <div class="col text-center">
+            <a href="{% url 'getweather:city' 'samara' %}">Самара</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <a href="{% url 'getweather:city' 'voronezh' %}">Воронеж</a>
+        </div>
+        <div class="col text-center">
+            <a href="{% url 'getweather:city' 'novosibirsk' %}">Новосибирск</a>
+        </div>
+        <div class="col text-center">
+            <a href="{% url 'getweather:city' 'ufa' %}">Уфа</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <a href="{% url 'getweather:city' 'ekaterinburg' %}">Екатеринбург</a>
+        </div>
+        <div class="col text-center">
+            <a href="{% url 'getweather:city' 'omsk' %}">Омск</a>
+        </div>
+        <div class="col text-center">
+            <a href="{% url 'getweather:city' 'chelyabinsk' %}">Челябинск</a>
+        </div>
+    </div>
+</div>
+</div>
+
+{% endblock context %}
